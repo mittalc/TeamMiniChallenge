@@ -4,159 +4,206 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
         <title>Mini Challenge</title>
     </head>
     <style>
+        /* loader  */
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+            background: url('https://media.giphy.com/media/ycfHiJV6WZnQDFjSWH/giphy.gif') 50% 50% no-repeat rgb(0, 0, 0);
+        }
 
         html{
             scroll-behavior: smooth;
         }
-            body{
-                  background-color: #40f99b;
-                  font-size: 45px;
+        body{
+            color: white;         
+            font-size: 45px;
+            margin: 0px;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
                   
+            }
+        .floater{
+            background-image: url("toad3.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;   
             }
             
-            table, th, td {
-                  border: 10px groove #0ed9c8;
-                  padding: px;
-                  text-shadow:1px 1px 1px #ccc;
+        table, th, td {
+            border: 10px groove #0ed9c8;
+            text-shadow:1px 1px 1px #ccc;
 
                   
             }
 
+        th,td{
+            padding: 10px;
 
-            table{
-                   border: 16px ridge(5,10,1);
-                   height: 30%;
-                   width: 70%;
-                   margin: 1px auto;
+            }
+
+            
+
+
+        table{
+            border: 16px ridge(5,10,1);
+            height: 30%;
+            width: 70%;
+            margin: 1px auto;
         
             }
 
-            ol{
-                list-style-type: decimal;
+        ol{
+            list-style-type: decimal;
             }
             
-            h1{
-                color:#fca311;
-                font-family: 'Ravi Prakash', cursive;
-                font-size: 100px;
-                margin: 0px;
+        h1{
+            color:#fca311;
+            font-family: 'Yanone Kaffeesatz', sans-serif;                
+            font-size: 100px;
+            margin: 0px;
             }
-            h3{
-                color:#89fc00;
-                font-family: 'Ravi Prakash', cursive;
-                font-size: 60px;
-                padding: 0px;
+        h3{
+            color:#89fc00;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 60px;
+            padding: 0px;
             }
            
-            marquee{
-                color:#ffffff;
+        marquee{
+            color:#ffffff;
                 
             }
-            div{
-                position: absolute;
-                font-family: 'Ravi Prakash', cursive;
-                font-size: 25px;
-                z-index: 1;
+        div{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 25px;
+            z-index: 1;
             }
-            p,div{
-                font-family: 'Ravi Prakash', cursive;
-                font-size: 25px;
+
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            }
+        p{  padding-top: 20px;
+            padding: 10px;
+            margin: 0px;
+            text-align: center;
+            }
+        p,div{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 25px;
 
             }
-            .button1 {
-                background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                font-family: 'Ravi Prakash', cursive;
+
+        .button1 , button{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+             margin: 4px 2px;
+            cursor: pointer;
+            font-family: 'Ravi Prakash', cursive;
 
             }
            .button4 {
                 padding: 32px 16px;
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
            }
+            img,iframe{
+                border: 2px solid black;            }
            
-           
-           
-            
+            #head
+             { font-size:5em; 
+             position:absolute; 
+             top:20px; 
+             left:20px; 
+             z-index:2;
+             width: 97vw; }
+
+         
       </style>
-      <body >  
+
+<!-- loader  -->
+      <div class="loader"></div>
+      <body>  
             <!-- most of content follows the body tag -->
             <!--Background colour-->
             
           
-
             <div class="floater">
-                <marquee direction="down" behavior="alternate" width="1000px" height="1200px" style="position:absolute;">
-                <marquee behavior="alternate" style="font-size: 7;">
-                    ?
-                </marquee>
-                </marquee>
+                <div style="background-color: rgba(0, 0, 0, 0.761);">
+
+
             
 
-            <p> Play this for some ambient music: </p>
-            <audio controls autoplay1>
-            <source src="frog_sounds.mp3" type="audio/mpeg">
-            </audio>
-            
-
-            <iframe src="https://gifer.com/embed/2ii9" width=100% height=300 frameBorder="0" allowFullScreen></iframe>
+            <iframe src="https://gifer.com/embed/2ii9" style="border: none" width=100% height=700 frameBorder="0" allowFullScreen></iframe>
+            <div id="head">            
+                <h1 id="top" style="text-align: center;">Welcome To The Toad Pond</h1>
+                <marquee>
+                    <img src="toad1.jpg" alt = "toad" width="200">
+                </marquee>    
+                <marquee direction="right">
+                    <img src="toad2.jpg" alt = "toad" width="200">
+                </marquee> 
+                <h3 style="text-align: center;">This pond has only one rule, WE DON'T HAVE RULES! </h3>
+            </div>
             <div><a href="https://gifer.com">via GIFER</a></div><br><br>
-        
-            <h1 id="top">Welcome To The Toad Pond</h1>
-            <script type="text/javascript" src="//counter.websiteout.net/js/2/10/0/0"></script>            
-            <marquee>
-                <img src="toad1.jpg" alt = "toad" width="200">
-            </marquee>    
-            <marquee direction="right">
-                <img src="toad2.jpg" alt = "toad" width="200">
-            </marquee> 
+  
 
             
             
-
-                
+          <div style="text-align: center; background-color: rgba(0, 0, 0, 0.57); padding-top: 5px;">                
             <h3 id="chaos1">Ranking The Toads</h3>
+
             
-            <img src="squiggle.png" alt = "squiggle" width=25%>
+            <img src="squiggle.png" style="border:none" alt = "squiggle" width=25%>
            
             
             
-            <ol> <li> Toad</li>
+            <ol style="list-style-position:inside;"> <li> Toad</li>
                 <li>Golden Toad </li>
                 <li>Panamania </li>
             </li>
         </ol>
           
-            <img src="squiggle.png" alt = "squiggle" width=25%> <br>
+            <img src="squiggle.png"  style="border:none" alt = "squiggle" width=25%> <br>
             <button class=" button1" onclick="alert('TOADS TOADS TOADS TOADS!')">More Toads</button> <br> <br>
+        </div>
 
 
-            <marquee behavior="alternate" width="100%" scrollamount="8" scrolldelay="95" height="37" bgcolor="#00FFFF">TOADS TOADS TOADS TOADS TOADS</marquee>
-            <marquee behavior="alternate" direction="up" width="100%"><marquee direction="right">TOADS TOADS TOADS TOADS TOADS</marquee></marquee>
 
             <a href="#chaos1">Where am I</a>
+
+
+            <div style="text-align: center; background-color: rgba(0, 0, 0, 0.57); padding-top: 5px;">            
+                <h3 >What do we do? </h3>
+
             <marquee>
-                <img src="gifToad.gif" alt = "toad" width=250 height=200 > <br>
+                <img src="gifToad.gif" alt = "toad" width=250 height=200 >&nbsp; Toads dance! <br>
               </marquee> 
                <marquee  direction="right">
-               <img src="gifToad.gif" alt = "toad" width=250 height=200 > <br>
+               <img src="gifToad.gif" alt = "toad" width=250 height=200 >&nbsp;Toads sing! <br>
                </marquee> 
                <marquee>
-               <img src="gifToad.gif" alt = "toad" width=250 height=200 > <br>
+               <img src="gifToad.gif" alt = "toad" width=250 height=200 >&nbsp;Toads party! <br>
               </marquee>
+            </div>
+
+              <marquee behavior="alternate" direction="up" width="100%"><marquee direction="right">TOADS TOADS TOADS TOADS TOADS</marquee></marquee>
+              <div style="text-align: center; background-color: rgba(0, 0, 0, 0.57); padding-top: 5px;">                
 
             <a id="jokes"></a>
-            <h3>Jokes</h3>
+            <h3 style="text-align: center;">Jokes</h3>
 
             <table>
                 <tr>
@@ -190,15 +237,13 @@
                       
                     </tr>   
           </table>
-
-           <div style="float:left;"> 
-            </div>
-
-
+  
+            
             
             <button type="button" onclick='alert("You pressed the button !")'>Click me!</button> <br ><br>
 
-            <a href="#jokes">Back to the jokes! Ribbit</a><br><br><br><br>
+            <a href="#jokes">Back to the jokes! Ribbit</a><br>
+            <br>
 
             <input type="text" list="text_editors">
             <datalist id="text_editors">
@@ -207,8 +252,11 @@
                 <option value="TOADS"></option>
                 <option value="TOADS"></option>
                 </datalist>
-            <p><em>For example;
+            <p ><em>For example;
             </em> TOADS</p>
+            </div>
+
+
             <marquee>
             <iframe src="https://gifer.com/embed/F6SV" width=300 height=300 frameBorder="0" allowFullScreen></iframe><br>
             <a href="https://gifer.com">via GIFER</a>
@@ -219,38 +267,45 @@
             <a href="https://gifer.com">via GIFER</a>
             </marquee> 
 
-            <h3> Email in to submit your fav toad -----> thisisfake@toadspond.ca</h3>
-            <a href="https://www.google.com/search?q=toads&rlz=1C1CHBF_enCA912CA912&sxsrf=ALeKk035YK8jJJMkhgGcLdv9Vk2sf6eNXQ:1615760806383&source=lnms&tbm=isch&biw=1920&bih=937">All the toads</a>
-            <br><a href="#top">Back to top of page</a>
+            <h5 style="text-align:center;"><a target="_blank" href="https://www.google.com/search?q=toads&rlz=1C1CHBF_enCA912CA912&sxsrf=ALeKk035YK8jJJMkhgGcLdv9Vk2sf6eNXQ:1615760806383&source=lnms&tbm=isch&biw=1920&bih=937">            <h4> Email in to submit your fav toad -----> thisisfake@toadspond.ca</h4>
+<br>                All the toads</a> | <a href="#top">Back to top of page</a>
+            </h5>
+     
 
+            <p> Play this for some ambient music:    
+                <br><br>
+                <audio controls>
+                <source src="frog_sounds.mp3" type="audio/mpeg">
+                </audio></p>
+                <div style="text-align: center;">You are visitor number: 
+                <script type="text/javascript" src="//counter.websiteout.net/js/2/10/0/0"></script>            
+            </div>
             <br> <br> <br> <br>
 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-            <img src="finalToad.gif" alt = "toad" width=7% > 
-              
-            
-            
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% >             
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+            <img src="finalToad.gif" style="border:none" alt = "toad" width=7% > 
+
+            </div>
+            <script src="three.min.js"></script>
+            <script src="vanta.fog.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+            window.onload = function() {
+    
+                $('.loader').fadeOut();
+        
+        }</script>
+  
       </body>
 </html>
