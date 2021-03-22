@@ -5,3 +5,4 @@ Find more info: http://discord.winhacks.ca #mini-challenge-info
 
 https://mittalc.github.io/TeamMiniChallenge/
 
+![Alt Text](toad.gif)
