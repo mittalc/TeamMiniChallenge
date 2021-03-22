@@ -1,7 +1,6 @@
 # TeamMiniChallenge 
 Winhacks 2021
-![Alt Our team has been awarded the first prize in the Challenge.
-Our deployment link: https://mittalc.github.io/TeamMiniChallenge/ ](toad.gif)
+![Alt Our team has been awarded the first prize in the Challenge. Our deployment link: https://mittalc.github.io/TeamMiniChallenge/ ](toad.gif)
 
 
 
